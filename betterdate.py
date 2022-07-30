@@ -4,6 +4,8 @@ class BetterDate:
       # Recall that Python allows multiple variable assignments in one line
       self.year, self.month, self.day = year, month, day
     
+    def __repr__(self):
+      return "{}-{}-{}".format(self.year,self.month,self.day)
     
     
     # Define a class method from_str
